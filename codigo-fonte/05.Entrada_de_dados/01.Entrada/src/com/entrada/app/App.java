@@ -8,7 +8,7 @@ public class App {
         Scanner leia = new Scanner(System.in);
 
         // declaração de variáveis
-        String nome;
+        String nome, email;
         int idade;
         double altura;
 
@@ -19,6 +19,14 @@ public class App {
         idade = leia.nextInt();
         System.out.println("Informe sua altura:");
         altura = leia.nextDouble();
+        System.out.println("Informe seu e-mail:");
+        email = leia.nextLine();
+
+        // output
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Altura: " + altura);
+        System.out.println("E-mail: " + email);
 
         // fecha objeto do tipo Scanner
         leia.close();
