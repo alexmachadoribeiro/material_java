@@ -1,4 +1,4 @@
-package com.variaveis.app;
+package com.formatted.app;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -10,9 +10,9 @@ public class App {
         boolean doador = true;
 
         // Exibição das variáveis
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Altura: " + altura);
-        System.out.println("Doador? " + doador);
+        System.out.println("Nome: %s".formatted(nome));
+        System.out.println("Idade: %d".formatted(idade));
+        System.out.println("Altura: %.2f".formatted(altura));
+        System.out.println("Doador? %b".formatted(doador));
     }
 }

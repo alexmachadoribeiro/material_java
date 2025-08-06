@@ -1,4 +1,4 @@
-package com.variaveis.app;
+package com.forma3.app;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -10,9 +10,9 @@ public class App {
         boolean doador = true;
 
         // Exibição das variáveis
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Altura: " + altura);
-        System.out.println("Doador? " + doador);
+        System.out.printf("Nome: %s%n", nome);
+        System.out.printf("Idade: %d%n", idade);
+        System.out.printf("Altura: %.2f%n", altura);
+        System.out.printf("Doador? %b%n", doador);
     }
 }
