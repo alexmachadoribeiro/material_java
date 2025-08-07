@@ -19,6 +19,7 @@ public class App {
         idade = leia.nextInt();
         System.out.println("Informe sua altura:");
         altura = leia.nextDouble();
+        leia.nextLine(); // Limpa o buffer antes de ler o e-mail
         System.out.println("Informe seu e-mail:");
         email = leia.nextLine();
 
