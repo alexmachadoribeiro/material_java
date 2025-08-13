@@ -10,19 +10,30 @@ public class App {
         PessoaJuridica empresa = new PessoaJuridica();
 
         // definindo os atributos da pessoa física
-        usuario.nome = "João da Silva";
-        usuario.cpf = "123.456.789-00";
-        usuario.email = "usuario@exemplo.com";
-        usuario.telefone = "1234-5678";
-        usuario.endereco = "Rua A, 123";
+        System.out.println("Informe seu nome:");
+        usuario.nome = leia.nextLine();
+        System.out.println("Informe seu CPF:");
+        usuario.cpf = leia.nextLine();
+        System.out.println("Informe seu e-mail:");
+        usuario.email = leia.nextLine();
+        System.out.println("Informe seu telefone:");
+        usuario.telefone = leia.nextLine();
+        System.out.println("Informe seu endereço:");
+        usuario.endereco = leia.nextLine();
 
         // definindo os atributos da pessoa jurídica
-        empresa.razaoSocial = "Empresa Exemplo Ltda";
-        empresa.nomeFantasia = "Exemplo";
-        empresa.cnpj = "12.345.678/0001-90";
-        empresa.email = "empresa@exemplo.com";
-        empresa.telefone = "9876-5432";
-        empresa.endereco = "Avenida B, 456";
+        System.out.println("Informe a Razão Social da empresa:");
+        empresa.razaoSocial = leia.nextLine();
+        System.out.println("Informe o Nome Fantasia da empresa:");
+        empresa.nomeFantasia = leia.nextLine();
+        System.out.println("Informe o CNPJ da empresa:");
+        empresa.cnpj = leia.nextLine();
+        System.out.println("Informe o e-mail da empresa:");
+        empresa.email = leia.nextLine();
+        System.out.println("Informe o telefone da empresa:");
+        empresa.telefone = leia.nextLine();
+        System.out.println("Informe o endereço da empresa:");
+        empresa.endereco = leia.nextLine();
 
         // exibindo os dados do usuário
         System.out.println(usuario.cumprimentar());
